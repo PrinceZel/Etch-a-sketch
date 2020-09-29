@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="013d2c41-ca6c-4b2d-9bff-159ba299d63c" name="Default Changelist" comment="" />
+    <list default="true" id="013d2c41-ca6c-4b2d-9bff-159ba299d63c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sketch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,17 +16,24 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iBZmJEIhwTEmCGl3DN4H5NTJ3I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -33,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601383102274</updated>
-      <workItem from="1601383103320" duration="878000" />
+      <workItem from="1601383103320" duration="2166000" />
     </task>
     <servers />
   </component>
@@ -45,5 +57,9 @@
       <screen x="0" y="23" width="1792" height="1044" />
     </state>
     <state x="1184" y="453" key="Github.ShareDialog/0.23.1792.1044@0.23.1792.1044" timestamp="1601384392344" />
+    <state x="1085" y="175" key="Github.UntrackedFilesDialog" timestamp="1601384397871">
+      <screen x="0" y="23" width="1792" height="1044" />
+    </state>
+    <state x="1085" y="175" key="Github.UntrackedFilesDialog/0.23.1792.1044@0.23.1792.1044" timestamp="1601384397871" />
   </component>
 </project>
