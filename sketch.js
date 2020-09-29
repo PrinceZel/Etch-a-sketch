@@ -1,84 +1,57 @@
 const container = document.querySelector(`#div`);
+container.style.width = "960px";
+container.style.height = "500px";
+container.style.marginTop = "50px";
 
-// 16 divs
-const div1 = document.createElement('div');
-const div2 = document.createElement('div');
-const div3 = document.createElement('div');
-const div4 = document.createElement('div');
-const div5 = document.createElement('div');
-const div6 = document.createElement('div');
-const div7 = document.createElement('div');
-const div8 = document.createElement('div');
-const div9 = document.createElement('div');
-const div10 = document.createElement('div');
-const div11 = document.createElement('div');
-const div12 = document.createElement('div');
-const div13 = document.createElement('div');
-const div14 = document.createElement('div');
-const div15 = document.createElement('div');
-const div16 = document.createElement('div');
-
-div1.classList.add("grid");
-div2.classList.add("grid");
-div3.classList.add("grid");
-div4.classList.add("grid");
-div5.classList.add("grid");
-div6.classList.add("grid");
-div7.classList.add("grid");
-div8.classList.add("grid");
-div9.classList.add("grid");
-div10.classList.add("grid");
-div11.classList.add("grid");
-div12.classList.add("grid");
-div13.classList.add("grid");
-div14.classList.add("grid");
-div15.classList.add("grid");
-div16.classList.add("grid");
-
-container.appendChild(div1);
-container.appendChild(div2);
-container.appendChild(div3);
-container.appendChild(div4);
-container.appendChild(div5);
-container.appendChild(div6);
-container.appendChild(div7);
-container.appendChild(div8);
-container.appendChild(div9);
-container.appendChild(div10);
-container.appendChild(div11);
-container.appendChild(div12);
-container.appendChild(div13);
-container.appendChild(div14);
-container.appendChild(div15);
-container.appendChild(div16);
-
-div1.textContent = "1";
-div2.textContent = "2";
-div3.textContent = "3";
-div4.textContent = "4";
-div5.textContent = "5";
-div6.textContent = "6";
-div7.textContent = "7";
-div8.textContent = "8";
-div9.textContent = "9";
-div10.textContent = "10";
-div11.textContent = "11";
-div12.textContent = "12";
-div13.textContent = "13";
-div14.textContent = "14";
-div15.textContent = "15";
-div16.textContent = "16";
-
-container.style.display = 'grid';
-container.style.gridRowGap = '50px';
-container.style.columnGap = '50px';
-container.style.gridTemplateColumns = "auto auto auto auto";
-
-
-
-function removeTransition(e){
-    e.target.classList.add('hovering');
+function createGrid(size) {
+    for (let i = 1; i <= size*size; i++){
+        const div = document.createElement('div');
+        container.appendChild(div);
+        div.classList.add('grid');
+    }
+    container.style.display = 'grid';
+    let String = "";
+    for (let i = 0; i < size; i++){
+        String+= "auto ";
+    }
+    container.style.gridTemplateColumns = String;
+    color();
 }
 
-const divs = Array.from(document.querySelectorAll('.grid'));
-divs.forEach(div => div.addEventListener('mouseenter', removeTransition));
+function clear() {
+    const grids = Array.from(document.querySelectorAll('.grid'));
+    grids.forEach(grid => grid.style.backgroundColor = "transparent");
+    while(container.firstChild){
+        container.removeChild(container.firstChild);
+    }
+    const size = prompt("How many squares per side?")
+
+    createGrid(size);
+}
+
+function addTrans(e){
+    e.target.classList.remove('grid');
+    e.target.classList.add('hovering');
+    const hover = document.querySelector(".hovering");
+    hover.style.backgroundColor = "black";
+}
+
+function removeTrans(e){
+    e.target.classList.remove('hovering');
+    e.target.classList.add('grid');
+}
+
+function color(){
+    const divs = Array.from(document.querySelectorAll('.grid'));
+    divs.forEach(div => div.addEventListener('mouseenter', addTrans));
+    divs.forEach(div => div.addEventListener('mouseleave', removeTrans))
+}
+
+const btn = document.querySelector('#btn');
+btn.style.marginTop = "30px";
+btn.style.marginLeft = "460px";
+btn.addEventListener('click', clear);
+
+createGrid(4);
+
+

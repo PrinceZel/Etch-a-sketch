@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="013d2c41-ca6c-4b2d-9bff-159ba299d63c" name="Default Changelist" comment="divs added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +16,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -33,6 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -43,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601383102274</updated>
-      <workItem from="1601383103320" duration="4954000" />
+      <workItem from="1601383103320" duration="9927000" />
     </task>
     <task id="LOCAL-00001" summary="divs added">
       <created>1601385773297</created>
@@ -52,7 +55,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601385773297</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="divs added">
+      <created>1601389666071</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601389666071</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +85,9 @@
       <screen x="0" y="23" width="1792" height="1044" />
     </state>
     <state x="913" y="281" key="Vcs.Push.Dialog.v2/0.23.1792.1044@0.23.1792.1044" timestamp="1601385783147" />
+    <state x="1109" y="465" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601395553364">
+      <screen x="0" y="23" width="1792" height="1044" />
+    </state>
+    <state x="1109" y="465" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1044@0.23.1792.1044" timestamp="1601395553364" />
   </component>
 </project>
